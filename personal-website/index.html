@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="'en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelina Wang's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a89fc2e29d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#header">
+                <img src="images/logo.png" class="logo">
+            </a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="images/Angelina-Wang-Resume.pdf" download>Resume</a></li>
+                <i class="fa-solid fa-x" style="color: #614b4b;" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" style="color: #614b4b;" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<hr class="divider">
+<!-----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm a first year student at the <strong>University of California, Berkeley</strong>, majoring in cognitive science with a concentration in computer science. 
+                    I'm an art and design enthusiast, and I'm excited to discover more ways to combine my passions with technology to make human-computer interactions more inutitve and accessible to users.
+                    I'm also interested in software development and data analysis.
+                    My portfolio is just getting started, so look out for more creative projects in the future!
+                </p>
+                <p>
+                    Outside of school, I love reading historical literature, journaling, staying active through badminton and rock-climbing, exploring new music genres, and dabbling in cooking recipes.
+                    I'm always picking up new hobbies to learn!
+                </p>            
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----portfolio----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/code.png">
+                <div class="layer">
+                    <h3>Code Archive</h3>
+                    <p>All things code! (more projects coming soon...)</p>
+                    <a href="code-archive.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/design.png">
+                <div class="layer">
+                    <h3> Design Archive</h3>
+                    <p>All of the fun infographics, zines, and art projects I've made!</p>
+                    <a href="design-archive.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ----contact---- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect!</h1>
+                <p>angelinaw@berkeley.edu</p>
+                <div class="social-icons">
+                    <a href="https://github.com/angelinakwang"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/angelina-wang-177749261"><i class="fa-brands fa-linkedin"></i></a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Designed by Angelina Wang using HTML, CSS, JS, Figma, & Procreate.</p>
+    </div>
+</div>
+
+<!-- Side menu for mobile view -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
